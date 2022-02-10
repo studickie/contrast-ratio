@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrast Ratio</title>
+    <link rel="stylesheet" href="./styles/global.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <form id="form-contrast-ratio">
+            <fieldset>
+                <legend>Contrast Ratio</legend>
+                <div>
+                    <label for="input-color-text">Text Color</label>
+                    <input type="color" id="input-color-text" value="#0000ff" data-event-id="input-color-text"
+                        data-group-id="contrast-ratio-color" />
+                </div>
+                <div>
+                    <label for="input-color-background">Background Color</label>
+                    <input type="color" id="input-color-background" value="#ffffff"
+                        data-event-id="input-color-background" data-group-id="contrast-ratio-color" />
+                </div>
+                <div>
+                    <output for="input-color-text input-color-background" id="output-result"></output>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <script type="text/javascript" src="./scripts/contrastRatio.js"></script>
+    <script type="text/javascript" src="./scripts/global.js"></script>
+</body>
+
+</html>
